@@ -5,8 +5,7 @@
 }
 
 body{
-    background-color:aliceblue;
-    display: flex;
+    background: linear-gradient(to top, #6600cc 0%, #9900cc 100%);display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -22,7 +21,50 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* box-shadow: 10px 10px 5px lightblue; */
+}
 
+.container{
+    max-width: 90%;
+    background-color: lightgray;
+    width: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+   
+}
+
+h1{
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 33px;
+    color: rgb(43, 0, 43);
+}
+
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 20px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: rgb(43, 0, 43);
+}
+
+input{
+    display: block;
+    width: 90%;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    outline: none;
 }
 
 .Login_btn{
@@ -33,5 +75,38 @@ body{
     color: white;
     font-size: 25px;
     font-weight: bolder;
+    cursor: pointer;
+}
+
+.btn_action{
+    text-align: center;
+}
+
+.final_Login{
+    width: 450px;
+    padding: 10px 40px;
+    margin: 10px;
+    background: linear-gradient(to top, #9900cc 0%, #ff66cc 100%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+hr{
+    border-top: 2px solid black;
+}
+
+.cancel_btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: lightgray;
+    color: rgb(83, 82, 82);
+    font-size: 30px;
+    padding: 10px;
     cursor: pointer;
 }
