@@ -21,6 +21,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    pointer-events: none;
     /* box-shadow: 10px 10px 5px lightblue; */
 }
 
@@ -69,13 +71,17 @@ input{
 
 .Login_btn{
     padding: 10px 40px;
-    background: linear-gradient(to top, #9900cc 0%, #ff66cc 100%);
+    background-color: black;
     border: none;
     border-radius: 5px;
     color: white;
     font-size: 25px;
     font-weight: bolder;
     cursor: pointer;
+}
+
+.Login_btn:hover{
+    border: 1px solid white;
 }
 
 .btn_action{
@@ -109,4 +115,15 @@ hr{
     font-size: 30px;
     padding: 10px;
     cursor: pointer;
+}
+
+.cancel_btn :hover{
+    color:rgb(43, 0, 43);
+    font-size: 32px;
+
+}
+
+.rise{
+    opacity: 1;
+    pointer-events: auto;
 }
