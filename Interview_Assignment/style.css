@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+
+}
+
+
+.navDiv {
+    background-color: #101943;
+
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.options {
+    width: 35%;
+    /* height: 20px; */
+    border: 1px solid black;
+    background-color: aliceblue;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 35px;
+}
+
+button {
+    width: 50px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.red,
+.Red {
+    background-color: red;
+    color: red;
+}
+
+.yellow,
+.Yellow {
+    background-color: yellow;
+    color: yellow;
+}
+
+.blue,
+.Blue {
+    background-color: blue;
+    color: blue;
+}
+
+.black,
+.Black {
+    background-color: black;
+}
+
+
+#create_task {
+    width: auto;
+    font-size: 20px;
+    padding: 9px;
+    margin: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+/* =======================================Main================================= */
+
+.main {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.inner_main {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    /* display: none; */
+}
+
+.pop_up {
+    width: 525px;
+    height: 450px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: #2c1652;
+    border-radius: 10px;
+    /* display: none; */
+    /* opacity: 0; */
+    /* pointer-events: none; */
+    /* position: relative; */
+    position: absolute;
+    z-index: 10;
+    top: 20%;
+    left: 35%;
+}
+
+.cancel_btn {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border: none;
+    /* background-color: rgb(26, 26, 26); */
+    color: rgb(83, 82, 82);
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.done_btn {
+    font-size: 25px;
+    line-height: 0.3;
+    padding: 25px;
+    width: 380px;
+}
+
+
+
+/* ============================================= */
+
+
+.input_area {
+    display: block;
+    margin: 10px;
+    font-size: larger;
+    background-color: #2c1652;
+    /* width: 300px; */
+}
+
+.done_btn {
+    text-align: center;
+}
+
+
+.color_div {
+    padding: 20px;
+    display: grid;
+    align-content: space-evenly;
+    /* justify-content:stretch; */
+    background-color: rgb(26, 26, 26);
+    border-radius: 0 10px 10px 0;
+
+}
+
+.btn {
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#main_input {
+    /* height: 200px; */
+    font-size: 20px;
+    display: block;
+    width: 350px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background-color: #2c1652;
+    color: white;
+    outline: none;
+}
+
+
+
+/* ========================task============================ */
+
+.task_div {
+    width: 350px;
+    height: 220px;
+    /* border: 1px solid black; */
+    border-top: 10px solid black;
+    /* border-style: inset; */
+    border-radius: 10px;
+    background-color: darkseagreen;
+    display: inline-block;
+    margin: 30px;
+}
+
+.input_div {
+    margin-top: 10px;
+    width: 300px;
+    height: 150px;
+    /* text-align: center; */
+}
+
+#text_input {
+    width: 350px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    /* outline: none; */
+    background-color:darkseagreen;
+}
+
+.fav_icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tick,
+.del,
+.edit,
+.color_box,
+.lock,
+.unlock {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 23px;
+    margin-top: 20px;
+    /* padding: 0 8px 0 0; */
+}
+
+.tick{
+    color: green;
+}
+
+.del{
+    color: red;
+}
+
+.edit{
+    color: khaki;
+}
