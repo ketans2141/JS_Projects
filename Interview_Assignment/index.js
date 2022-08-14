@@ -216,7 +216,7 @@ createTask.addEventListener("click", function () {
 
             // -------------------------------colorBox--------------------
 
-            colorBox.style.color = "black"
+            colorBox.style.color = "gray"
             // taskDiv.style.borderTop="black"
             colorBox.addEventListener("click", function () {
 
@@ -241,17 +241,83 @@ createTask.addEventListener("click", function () {
                 }
             })
 
+            // -------------- functionality on redColor in nav -------------
 
             redColor.addEventListener("click",function(){
                 if(taskDiv.style.borderTop=="10px solid red"){
                     tick.parentElement.parentElement.parentElement.style.display = "inline-block";
                 }
-                else{
-                    tick.parentElement.parentElement.parentElement.style.display = "none";
+                else if( taskDiv.style.borderTop = "10px solid yellow"){
+                    tick.parentElement.parentElement.parentElement.style.display = "none ";
 
+                }
+                else if(taskDiv.style.borderTop = "10px solid blue"){
+                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+
+                }
+                else if( taskDiv.style.borderTop = "10px solid black"){
+                    tick.parentElement.parentElement.parentElement.style.display = "none ";
                 }
             })
 
+
+            // -------------------------functionality on yellowColor in nav-------------
+
+            yellowColor.addEventListener("click",function(){
+                if(taskDiv.style.borderTop=="10px solid yellow"){
+                    tick.parentElement.parentElement.parentElement.style.display = "inline-block";
+                }
+                else if( taskDiv.style.borderTop = "10px solid red"){
+                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+
+                }
+                else if(taskDiv.style.borderTop = "10px solid blue"){
+                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+
+                }
+                else if( taskDiv.style.borderTop = "10px solid black"){
+                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+                }
+            })
+
+            // ----------------------functionality on blueColor in nav------------------
+
+            blueColor.addEventListener("click",function(){
+                if(taskDiv.style.borderTop=="10px solid blue"){
+                    tick.parentElement.parentElement.parentElement.style.display = "inline-block";
+                }
+                else if( taskDiv.style.borderTop = "10px solid red"){
+                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+
+                }
+                else if(taskDiv.style.borderTop = "10px solid yellow"){
+                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+
+                }
+                else if( taskDiv.style.borderTop = "10px solid black"){
+                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+                }
+            })
+
+
+            // -------------------------functionality on blackColor in nav------------------
+
+            blackColor.addEventListener("click",function(){
+                if(taskDiv.style.borderTop=="10px solid black"){
+                    tick.parentElement.parentElement.parentElement.style.display = "inline-block";
+                }
+                else if( taskDiv.style.borderTop = "10px solid red"){
+                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+
+                }
+                else if(taskDiv.style.borderTop = "10px solid yellow"){
+                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+
+                }
+                else if( taskDiv.style.borderTop = "10px solid blue"){
+                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+                }
+            })
         }
     })
 
