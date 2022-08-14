@@ -3,11 +3,12 @@ const mainDiv = document.querySelector(".main");
 const body = document.querySelector("body");
 
 // -------------getting navbar buttons----------------
-const mark = document.querySelector(".mark");
+const All=document.querySelector(".all_btn")
 const redColor = document.querySelector(".red");
 const yellowColor = document.querySelector(".yellow");
 const blueColor = document.querySelector(".blue");
 const blackColor = document.querySelector(".black");
+const mark = document.querySelector(".mark");
 
 
 
@@ -245,18 +246,18 @@ createTask.addEventListener("click", function () {
 
             redColor.addEventListener("click",function(){
                 if(taskDiv.style.borderTop=="10px solid red"){
-                    tick.parentElement.parentElement.parentElement.style.display = "inline-block";
+                    taskDiv.style.display = "inline-block";
                 }
                 else if( taskDiv.style.borderTop = "10px solid yellow"){
-                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+                    taskDiv.style.display = "none ";
 
                 }
                 else if(taskDiv.style.borderTop = "10px solid blue"){
-                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+                    taskDiv.style.display = "none ";
 
                 }
                 else if( taskDiv.style.borderTop = "10px solid black"){
-                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+                    taskDiv.style.display = "none ";
                 }
             })
 
@@ -265,37 +266,41 @@ createTask.addEventListener("click", function () {
 
             yellowColor.addEventListener("click",function(){
                 if(taskDiv.style.borderTop=="10px solid yellow"){
-                    tick.parentElement.parentElement.parentElement.style.display = "inline-block";
+                    taskDiv.style.display = "inline-block";
                 }
                 else if( taskDiv.style.borderTop = "10px solid red"){
-                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+                    taskDiv.style.display= "none ";
 
                 }
                 else if(taskDiv.style.borderTop = "10px solid blue"){
-                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+                    taskDiv.style.display = "none ";
 
                 }
                 else if( taskDiv.style.borderTop = "10px solid black"){
-                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+                    taskDiv.style.display = "none ";
                 }
             })
 
             // ----------------------functionality on blueColor in nav------------------
 
             blueColor.addEventListener("click",function(){
-                if(taskDiv.style.borderTop=="10px solid blue"){
-                    tick.parentElement.parentElement.parentElement.style.display = "inline-block";
+
+                // if(colorBox.style.color=="blue"){
+                //     taskDiv.style.borderTop="10px solid blue"
+                // }
+                 if(taskDiv.style.borderTop=="10px solid blue"){
+                    taskDiv.style.display = "inline-block";
                 }
                 else if( taskDiv.style.borderTop = "10px solid red"){
-                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+                    taskDiv.style.display = "none ";
 
                 }
                 else if(taskDiv.style.borderTop = "10px solid yellow"){
-                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+                    taskDiv.style.display = "none ";
 
                 }
                 else if( taskDiv.style.borderTop = "10px solid black"){
-                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+                    taskDiv.style.display = "none ";
                 }
             })
 
@@ -304,19 +309,27 @@ createTask.addEventListener("click", function () {
 
             blackColor.addEventListener("click",function(){
                 if(taskDiv.style.borderTop=="10px solid black"){
-                    tick.parentElement.parentElement.parentElement.style.display = "inline-block";
+                    taskDiv.style.display = "inline-block";
                 }
                 else if( taskDiv.style.borderTop = "10px solid red"){
-                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+                    taskDiv.style.display = "none ";
 
                 }
                 else if(taskDiv.style.borderTop = "10px solid yellow"){
-                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+                    taskDiv.style.display = "none ";
 
                 }
                 else if( taskDiv.style.borderTop = "10px solid blue"){
-                    tick.parentElement.parentElement.parentElement.style.display = "none ";
+                    taskDiv.style.display = "none ";
                 }
+            })
+
+
+            // --------------------functionality on All button in nav-------------
+
+            All.addEventListener("click",function(){
+                // tick.parentElement.parentElement.parentElement.style.display = "inline-block";
+                taskDiv.style.display="inline-block"
             })
         }
     })

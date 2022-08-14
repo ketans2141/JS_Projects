@@ -185,7 +185,7 @@ button {
     width: 350px;
     height: 220px;
     /* border: 1px solid black; */
-    border-top: 10px solid black;
+    border-top: 10px solid gray;
     /* border-style: inset; */
     border-radius: 10px;
     background-color: darkseagreen;
