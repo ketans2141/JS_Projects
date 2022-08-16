@@ -13,8 +13,9 @@ body{
 }
 
 .main{
-    margin-top: 50px;
-    max-width: 1200px;  
+    margin-top: 40px;
+    max-width: 1200px; 
+
 }
 
 .main .container{
