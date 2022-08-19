@@ -1,2 +1,2 @@
 <h1>Output</h1>
-<img src="" alt="output">
+<img src="Navbar.png" alt="output">
