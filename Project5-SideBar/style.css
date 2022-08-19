@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    position: relative;
+    background-color:aliceblue;
+}
+
+.btnDiv{
+    text-align: right;
+    padding: 20px;
+}
+
+.toggleBtn{
+    font-size: 40px;
+    width: 50px;
+    background-color: #87c8ff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.fa-bars{
+    color: #142a3c;
+    
+}
+
+aside{
+    position: absolute;
+    width: 500px;
+    top: 0;
+    left: 0;
+    height: auto;
+    display: none;
+}
+
+.cancelBtn{
+    position: absolute;
+    right: 0;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    color: red;
+    background-color:lightgreen ;
+    cursor: pointer;
+}
+
+.headerDiv{
+    text-align: center;
+    background-color:lightgreen ;
+
+}
+
+img{
+    width: 300px;
+    height: 100px;
+}
+
+
+
+ul{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    /* padding: 10px; */
+
+}
+
+li{
+    list-style: none;
+    padding:20px;
+    /* border: 1px solid gray; */
+    background-color: aliceblue;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: lightgrey;
+}
+
+.mediaLinks{
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.action{
+    display: block;
+}
+
+.cancel{
+    display: none;
+}
