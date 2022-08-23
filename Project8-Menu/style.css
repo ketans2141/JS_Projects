@@ -41,9 +41,10 @@ body{
     background-color: plum;
 }
 
-/* .contentBox{
-    display: none;
-} */
+.contentBox{
+    max-width: 800px;
+    margin: auto;
+}
 
 .item{
     width: 200px;
@@ -65,13 +66,22 @@ p{
     vertical-align: top;
 }
 
-.breakfast,
+/* .breakfast,
 .lunch,
 .shakes,
 .dinner{
     display: none;
-}
+} */
 
 .action{
     display: inline-block;
+}
+
+.breakfastDiv,
+.lunchDiv,
+.shakesDiv,
+.dinnerDiv{
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
 }
